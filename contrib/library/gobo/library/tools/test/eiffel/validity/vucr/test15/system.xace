@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<system name="aa">
+	<description>
+		system: "vucr_test15"
+		copyright: "Copyright (c) 2018, Eric Bezault and others"
+		license: "MIT License"
+		date: "$Date: 2019-02-05 23:54:36 +0000 (Tue, 05 Feb 2019) $"
+		revision: "$Revision: 102790 $"
+	</description>
+
+	<root class="AA" creation="make"/>
+	<option name="console_application" value="true"/>
+	<option unless="${DEBUG}">
+		<option name="assertion" value="none"/>
+		<option name="garbage_collector" value="none"/>
+		<option name="finalize" value="true"/>
+	</option>
+	<option if="${DEBUG}">
+		<option name="assertion" value="all"/>
+		<option name="garbage_collector" value="internal"/>
+		<option name="finalize" value="false"/>
+	</option>
+	<option if="${GOBO_DOTNET}">
+		<option name="msil_generation" value="true"/>
+		<option name="line_generation" value="true"/>
+	</option>
+
+	<cluster name="vucr_test15" location="${GOBO}/library/tools/test/eiffel/validity/vucr/test15"/>
+	<mount location="${GOBO}/library/kernel.xace"/>
+</system>

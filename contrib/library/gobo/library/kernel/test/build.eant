@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="kernel_test" default="help">
+
+	<description>
+		description: "Gobo Eiffel Kernel Library Tester"
+		copyright: "Copyright (c) 2016, Eric Bezault and others"
+		license: "MIT License"
+		date: "$Date: 2019-02-05 23:54:36 +0000 (Tue, 05 Feb 2019) $"
+		revision: "$Revision: 102790 $"
+	</description>
+
+	<inherit>
+		<parent location="${GOBO}/library/common/config/tests.eant"/>
+	</inherit>
+
+</project>

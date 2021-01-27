@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="gexslt" default="help">
+
+	<description>
+		description: "Gobo Eiffel Xslt"
+		copyright: "Copyright (c) 2016, Eric Bezault and others"
+		license: "MIT License"
+		date: "$Date: 2017-04-11 17:45:00 +0000 (Tue, 11 Apr 2017) $"
+		revision: "$Revision: 100135 $"
+	</description>
+
+	<inherit>
+		<parent location="${GOBO}/library/common/config/tool.eant"/>
+	</inherit>
+
+</project>
